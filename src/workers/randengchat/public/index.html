@@ -1,0 +1,59 @@
+<head>
+  <meta name="google-signin-client_id" content="317386857634-8v93o5ffojc940gc62odf5e981k6e4nt.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script type="text/javascript" src="/public/index.js"></script>
+  <title>Random Engineer Chat</title>
+  <style>
+    body {
+      margin: 0 auto;
+      width: 60%;
+      padding-top: 10vh;
+    }
+    #ok-notif {
+      position: absolute;
+      background-color: lightgreen;
+      display: none;
+      padding: 20px;
+      top: 0px;
+    }
+    h1,h2 {
+      margin: 40px 0px;
+    }
+    #list>div {
+      box-shadow: 0 8px 33px 0 rgba(0,0,0,.07);
+      border: 1px solid #dadce0;
+      border-radius: 8px;
+      padding: .75em;
+      margin: 1.5em;
+      text-align: center;
+    }
+    #list img {
+      border-radius: 100%;
+    }
+    #list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  </style>
+</head>
+<body>
+  <div id="ok-notif"></div>
+
+  <h1>Random Engineer Chat</h1>
+
+  <h2>Participating</h2>
+
+  <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+  <p>
+    <button style="display:none" id="register-btn" onclick="register()">Click to register for next chat</button>
+  </p>
+
+  <h2>People registered</h2>
+  <div id="list">Please login first.</div>
+
+  <h2>Useful infos</h2>
+
+  <p>This site is entirely serverless. <br />Written using a Cloudflare Worker, KV and Cron Triggers.<br /><a href="https://blog.cloudflare.com/random-employee-chats-cloudflare/">See blog post</a>.</p>
+</body>

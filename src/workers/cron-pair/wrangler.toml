@@ -1,0 +1,11 @@
+name = "randengchat-cron-pair"
+type = "webpack"
+account_id = "your account id"
+webpack_config = "webpack.config.js"
+
+kv_namespaces = [
+  { binding = "DB", id = "your KV namespace id" },
+]
+
+[triggers]
+crons = ["0 8 * * 2"]

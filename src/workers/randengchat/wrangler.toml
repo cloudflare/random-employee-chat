@@ -1,0 +1,10 @@
+name = "randengchat"
+type = "webpack"
+account_id = "your account id"
+workers_dev = false
+route = "example.com/*"
+zone_id = "your zone id"
+
+kv_namespaces = [
+  { binding = "DB", id = "your KV namespace id" },
+]

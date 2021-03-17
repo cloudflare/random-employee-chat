@@ -1,0 +1,10 @@
+name = "randengchat-cron-reminder"
+type = "webpack"
+account_id = "your account id"
+
+kv_namespaces = [
+  { binding = "DB", id = "your KV namespace id" },
+]
+
+[triggers]
+crons = ["0 13 * * 5"]

@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "edmonds-blossom": "^1.0.0",
+    "moment": "^2.29.1",
+    "raw-loader": "^4.0.1",
+    "uuid": "^8.3.1"
+  }
+}

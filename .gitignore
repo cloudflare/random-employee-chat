@@ -1,0 +1,4 @@
+node_modules
+worker
+dist
+package-lock.json
